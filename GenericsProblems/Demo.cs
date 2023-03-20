@@ -14,8 +14,18 @@ namespace GenericsProblems
                 Console.WriteLine(a + " is maximum");
             if (b > a && b > c)
                 Console.WriteLine(b + " is maximum");
-            else
+            if (c > a && c > b)
                 Console.WriteLine(c + " is maximum");
         }
+        public void FindFloatMax(double a ,double  b ,double c )
+        {
+            if (a > b && a > c)
+                Console.WriteLine(a + " is maximum");
+            if (b > a && b > c)
+                Console.WriteLine(b + " is maximum");
+            if (c > a && c > b)
+                Console.WriteLine(c + " is maximum");
+        }
+
     }
 }
