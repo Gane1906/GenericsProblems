@@ -6,9 +6,16 @@ using System.Threading.Tasks;
 
 namespace GenericsProblems
 {
-    public class GenericDemo
+    public class GenericDemo<T> where T : IComparable
     {
-        public void FindMax<T>(T a, T b,T c) where T:IComparable
+        public T a, b, c;
+        public GenericDemo(T a,T b,T c)
+        {
+            this.a = a;
+            this.b = b;
+            this.c = c;
+        }
+        public void FindMax<T>() where T : IComparable
         {
             if (a.CompareTo(b) > 0 && a.CompareTo(c) > 0)
                 Console.WriteLine(a + " is maximum");

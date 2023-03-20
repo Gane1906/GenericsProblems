@@ -27,10 +27,12 @@ namespace GenericsProblems
             Console.Write("Enter third String: ");
             String input9 = Console.ReadLine();
             demo.FindStringMax(input7, input8, input9);
-            GenericDemo genericDemo = new GenericDemo();
-            genericDemo.FindMax<int>(input1, input2, input3);
-            genericDemo.FindMax<double>(input4, input5, input6);
-            genericDemo.FindMax<String>(input7, input8, input9);
+            GenericDemo<int> genericDemoInt = new GenericDemo<int>(input1,input2,input3);
+            genericDemoInt.FindMax<int>();
+            GenericDemo<double> genericDemoDouble = new GenericDemo<double>(input4, input5, input6);
+            genericDemoDouble.FindMax<double>();
+            GenericDemo<String> genericDemoString = new GenericDemo<String>(input7, input8, input9);
+            genericDemoString.FindMax<String>();
         }
     }
 }
