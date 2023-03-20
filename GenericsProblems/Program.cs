@@ -20,6 +20,13 @@ namespace GenericsProblems
             Console.Write("Enter third float value: ");
             double input6 = Convert.ToDouble(Console.ReadLine());
             demo.FindFloatMax(input4 ,input5 ,input6);
+            Console.Write("Enter first String: ");
+            String input7 = Console.ReadLine();
+            Console.Write("Enter Second String: ");
+            String input8 = Console.ReadLine();
+            Console.Write("Enter third String: ");
+            String input9 = Console.ReadLine();
+            demo.FindStringMax(input7, input8, input9);
         }
     }
 }
